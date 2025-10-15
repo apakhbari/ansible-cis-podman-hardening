@@ -13,12 +13,9 @@
 
 
 This Role configures Podman Daemon as per CIS Podman Community Edition Benchmark
-Tested with Podman 18.06 on rocky linux 8
 
-## Versioning and State of Development
-This project uses the [Semantic Versioning Policy](https://semver.org/). 
-
-Please note 0.x releases are works in progress (WIP) and may change at any time.   
+> [!IMPORTANT]
+> Tested with Podman 18.06 on rocky linux 8
 
 Requirements
 ------------
