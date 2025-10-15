@@ -10,19 +10,14 @@
 |___|    |_______||______| |_|   |_||__| |__||_|  |__|    |__| |__||__| |__||___|  |_||______| |_______||_|  |__||___| |_|  |__||_______|
 ```
 
-
-
-This Role configures Podman Daemon as per CIS Docker Community Edition Benchmark
+- This Role configures Podman Daemon as per CIS Docker Community Edition Benchmark
 
 > [!IMPORTANT]
 > Tested with Podman 18.06 on rocky linux 8
 
-Requirements
-------------
-
-If you must expose the Podman daemon via a network socket, TLS authentication for the daemon need to be configured.
-
-Please Generate CA cert and CA Key and place it in the files directory and provide the following aruguments.
+## Requirements
+- If you must expose the Podman daemon via a network socket, TLS authentication for the daemon need to be configured.
+- Please Generate CA cert and CA Key and place it in the files directory and provide the following aruguments.
 
 ```
 dockerd_via_network: true
@@ -45,8 +40,7 @@ client_cert: cert.pem
 client_cert_key: key.pem
 ```
 
-Role Variables
---------------
+## Role Variables
 ```
 tursted_users:
   - vagrant
@@ -65,20 +59,112 @@ seccomp_profile: ''
 authorization_plugins: []
 ```
 
-Issues
-------
+## Issues
+- Control `2.8 Enable user namespace support` currently disabled since this interferes with `selinux-enabled` configuration.
 
-Control `2.8 Enable user namespace support` currently disabled since this interferes with `selinux-enabled` configuration.
+## Example Playbook
 
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
+- Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+```
     - hosts: servers
       roles:
          - { role: username.rolename, x: 42 }
+```
 
+## My organization's requiremetns
+- My organization's requirs this sections
+```
+1_1
+1_3
+1_4
+1_5
+1_6
+1_7
+1_8
+1_9
+1_10
+1_12
+1_13
+
+2_1
+2_2
+2_5
+2_6
+2_7
+2_8
+2_9
+2_11
+2_12
+2_13
+2_14
+2_15
+2_16
+2_17
+2_18
+
+3_1
+3_2
+3_3
+3_4
+3_5
+3_6
+3_7
+3_8
+3_9
+3_10
+3_11
+3_12
+3_13
+3_14
+3_15
+3_16
+3_17
+3_18
+3_19
+3_20
+
+4_2
+4_3
+4_5
+4_6
+4_7
+4_8
+4_9
+
+5_1
+5_2
+5_3
+5_4
+5_5
+5_6
+5_7
+5_8
+5_9
+5_13
+5_14
+5_15
+5_16
+5_17
+5_18
+5_19
+5_20
+5_21
+5_22
+5_23
+5_24
+5_25
+5_26
+5_27
+5_28
+5_29
+5_30
+5_31
+
+6_1
+6_2
+
+7_1
+```
 
 # acknowledgment
 ## Contributors
