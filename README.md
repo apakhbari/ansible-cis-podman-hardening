@@ -74,7 +74,7 @@ authorization_plugins: []
 ## My organization's requiremetns
 - My organization requirs this sections to be hardened
 
-| 1    | 2    | 3    | 4   | 5    | 6   | 7   |
+| Section 1    | Section 2    | Section 3    | Section 4   | Section 5    | Section 6   | Section 7   |
 | ---- | ---- | ---- | --- | ---- | --- | --- |
 | 1_1  | 2_1  | 3_1  | 4_2 | 5_1  | 6_1 | 7_1 |
 | 1_3  | 2_2  | 3_2  | 4_3 | 5_2  | 6_2 |     |
