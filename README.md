@@ -1,26 +1,29 @@
-ansible-cis-docker-ce-hardening
-=========
+# ansible-cis-Podman-hardening
 
-This Role configures Docker Daemon as per CIS Docker Community Edition Benchmark
-Tested with Docker 18.06
+```
+ _______  _______  ______   __   __  _______  __    _      __   __  _______  ______    ______   _______  __    _  ___   __    _  _______ 
+|       ||       ||      | |  |_|  ||   _   ||  |  | |    |  | |  ||   _   ||    _ |  |      | |       ||  |  | ||   | |  |  | ||       |
+|    _  ||   _   ||  _    ||       ||  |_|  ||   |_| |    |  |_|  ||  |_|  ||   | ||  |  _    ||    ___||   |_| ||   | |   |_| ||    ___|
+|   |_| ||  | |  || | |   ||       ||       ||       |    |       ||       ||   |_||_ | | |   ||   |___ |       ||   | |       ||   | __ 
+|    ___||  |_|  || |_|   ||       ||       ||  _    |    |       ||       ||    __  || |_|   ||    ___||  _    ||   | |  _    ||   ||  |
+|   |    |       ||       || ||_|| ||   _   || | |   |    |   _   ||   _   ||   |  | ||       ||   |___ | | |   ||   | | | |   ||   |_| |
+|___|    |_______||______| |_|   |_||__| |__||_|  |__|    |__| |__||__| |__||___|  |_||______| |_______||_|  |__||___| |_|  |__||_______|
+```
+
+
+
+This Role configures Podman Daemon as per CIS Podman Community Edition Benchmark
+Tested with Podman 18.06 on rocky linux 8
 
 ## Versioning and State of Development
 This project uses the [Semantic Versioning Policy](https://semver.org/). 
-
-### Branches
-The master branch contains the latest version of the software leading up to a new release. 
-
-Other branches contain feature-specific updates. 
-
-### Tags
-Tags indicate official releases of the project.
 
 Please note 0.x releases are works in progress (WIP) and may change at any time.   
 
 Requirements
 ------------
 
-If you must expose the Docker daemon via a network socket, TLS authentication for the daemon need to be configured.
+If you must expose the Podman daemon via a network socket, TLS authentication for the daemon need to be configured.
 
 Please Generate CA cert and CA Key and place it in the files directory and provide the following aruguments.
 
@@ -80,7 +83,30 @@ Including an example of how to use your role (for instance, with variables passe
          - { role: username.rolename, x: 42 }
 
 
-Author Information
-------------------
+# acknowledgment
+## Contributors
 
-- Rony Xavier [rx294](https://github.com/rx294)
+APA 🖖🏻
+
+## Links
+
+```                                                                                
+  aaaaaaaaaaaaa  ppppp   ppppppppp     aaaaaaaaaaaaa   
+  a::::::::::::a p::::ppp:::::::::p    a::::::::::::a  
+  aaaaaaaaa:::::ap:::::::::::::::::p   aaaaaaaaa:::::a 
+           a::::app::::::ppppp::::::p           a::::a 
+    aaaaaaa:::::a p:::::p     p:::::p    aaaaaaa:::::a 
+  aa::::::::::::a p:::::p     p:::::p  aa::::::::::::a 
+ a::::aaaa::::::a p:::::p     p:::::p a::::aaaa::::::a 
+a::::a    a:::::a p:::::p    p::::::pa::::a    a:::::a 
+a::::a    a:::::a p:::::ppppp:::::::pa::::a    a:::::a 
+a:::::aaaa::::::a p::::::::::::::::p a:::::aaaa::::::a 
+ a::::::::::aa:::ap::::::::::::::pp   a::::::::::aa:::a
+  aaaaaaaaaa  aaaap::::::pppppppp      aaaaaaaaaa  aaaa
+                  p:::::p                              
+                  p:::::p                              
+                 p:::::::p                             
+                 p:::::::p                             
+                 p:::::::p                             
+                 ppppppppp                                                        
+```
