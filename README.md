@@ -12,7 +12,7 @@
 
 
 
-This Role configures Podman Daemon as per CIS Podman Community Edition Benchmark
+This Role configures Podman Daemon as per CIS Docker Community Edition Benchmark
 
 > [!IMPORTANT]
 > Tested with Podman 18.06 on rocky linux 8
